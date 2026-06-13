@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Nunito:wght@300;400;500;600&family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --saffron: #E8821A;
+  --saffron-light: #F5A347;
+  --saffron-pale: #FDF3E7;
+  --turmeric: #D4A017;
+  --turmeric-light: #F0C040;
+  --cream: #FFF9F0;
+  --warm-white: #FFFDF9;
+  --brown: #5C3A1E;
+  --brown-mid: #8B5E3C;
+  --brown-light: #C49A6C;
+  --green: #4A7C59;
+  --green-light: #7BAE8A;
+  --red: #C0392B;
+  --text-dark: #2C1810;
+  --text-mid: #6B4226;
+  --text-light: #A07850;
+  --border: rgba(232,130,26,0.15);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--text-dark);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+::selection { background: var(--saffron); color: white; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--saffron); border-radius: 3px; }
