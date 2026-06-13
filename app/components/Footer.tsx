@@ -30,7 +30,7 @@ export default function Footer() {
         <h3 style={{
           fontFamily: 'Playfair Display, serif', fontWeight: 700,
           fontSize: '1.5rem', color: '#FFF9F0', marginBottom: '0.25rem',
-        }}>Khakhra House</h3>
+        }}>Priti Gruh Udyog</h3>
         <p style={{
           fontFamily: 'Nunito, sans-serif', fontSize: '0.75rem',
           color: 'rgba(245,163,71,0.6)', letterSpacing: '0.12em',
@@ -41,7 +41,7 @@ export default function Footer() {
           display: 'flex', justifyContent: 'center', gap: '1rem',
           marginBottom: '2rem', flexWrap: 'wrap',
         }}>
-          {[['🌾', 'Whole Wheat'], ['✨', 'Natural Spices'], ['🏠', 'Made in Khopoli']].map(([icon, label]) => (
+          {[['🌾', 'Whole Wheat'], ['✨', 'Natural Spices'], ['🏠', 'Made in Nashik']].map(([icon, label]) => (
             <div key={label} style={{
               display: 'flex', alignItems: 'center', gap: '5px',
               fontFamily: 'Nunito, sans-serif', fontSize: '0.72rem',
@@ -59,9 +59,9 @@ export default function Footer() {
 
         <p style={{
           fontFamily: 'Nunito, sans-serif', fontSize: '0.7rem',
-          color: 'rgba(255,249,240,0.25)', fontWeight: 300,
+          color: 'rgba(255,249,240,0.25)', fontWeight: 300, 
         }}>
-          © {new Date().getFullYear()} Khakhra House · Khopoli, Maharashtra · All rights reserved
+          © {new Date().getFullYear()} Priti Gruh Udyog · Nashik, Maharashtra · All rights reserved
         </p>
       </div>
     </footer>

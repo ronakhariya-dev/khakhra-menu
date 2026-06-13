@@ -42,7 +42,7 @@ export default function Hero() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
             <div style={{ height: '1px', width: '48px', background: 'rgba(232,130,26,0.5)' }} />
             <span style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.7rem', color: 'rgba(245,163,71,0.8)', letterSpacing: '0.25em', textTransform: 'uppercase' }}>
-              Khopoli, Maharashtra
+              Nashik, Maharashtra
             </span>
             <div style={{ height: '1px', width: '48px', background: 'rgba(232,130,26,0.5)' }} />
           </div>
@@ -58,7 +58,7 @@ export default function Hero() {
           lineHeight: 0.95,
           marginBottom: '0.4rem',
         }}>
-          Khakhra
+          Priti
         </h1>
         <h1 style={{
           fontFamily: 'Playfair Display, serif',
@@ -69,7 +69,7 @@ export default function Hero() {
           lineHeight: 1,
           marginBottom: '1.25rem',
         }}>
-          House
+          Gruh Udyog
         </h1>
 
         {/* Gujarati subtitle */}
@@ -97,22 +97,35 @@ export default function Hero() {
         </p>
 
         {/* Badges */}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
-          {[['🌾', '100% Whole Wheat'], ['✨', 'No Preservatives'], ['❤️', 'Family Recipe']].map(([icon, label]) => (
-            <span key={label} style={{
-              display: 'inline-flex', alignItems: 'center', gap: '5px',
-              fontFamily: 'Nunito, sans-serif', fontSize: '0.75rem', fontWeight: 600,
-              padding: '5px 14px',
-              background: 'rgba(232,130,26,0.15)',
-              border: '1px solid rgba(232,130,26,0.3)',
-              borderRadius: '20px',
-              color: 'rgba(245,163,71,0.9)',
-              letterSpacing: '0.02em',
-            }}>
-              <span>{icon}</span> {label}
-            </span>
-          ))}
-        </div>
+<div style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
+  {[
+    ['🌾', 'Whole Wheat'],
+    ['🚫', 'No Preservatives'],
+    ['🔥', 'Roasted, Not Fried'],
+    ['🥬', '100% Vegetarian'],
+    ['❤️', 'Homemade'],
+  ].map(([icon, label]) => (
+    <span
+      key={label}
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: '5px',
+        fontFamily: 'Nunito, sans-serif',
+        fontSize: '0.75rem',
+        fontWeight: 600,
+        padding: '5px 14px',
+        background: 'rgba(232,130,26,0.15)',
+        border: '1px solid rgba(232,130,26,0.3)',
+        borderRadius: '20px',
+        color: 'rgba(245,163,71,0.9)',
+        letterSpacing: '0.02em',
+      }}
+    >
+      <span>{icon}</span> {label}
+    </span>
+  ))}
+</div>
       </div>
 
       {/* Bottom wave */}
