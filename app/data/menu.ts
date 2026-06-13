@@ -12,6 +12,7 @@ export type Category =
 export interface MenuItem {
   id: string
   name: string
+  nameGuj?: string
   tagline: string
   ingredients: string[]
   base: string
@@ -27,14 +28,14 @@ export interface MenuItem {
 }
 
 export const categories = [
-  { id: 'all', label: 'All Flavours', emoji: '✨' },
-  { id: 'masala', label: 'Masala', emoji: '🌶️' },
-  { id: 'classic', label: 'Classic', emoji: '🌾' },
-  { id: 'tangy', label: 'Tangy', emoji: '🍋' },
-  { id: 'child', label: 'Child Special', emoji: '🧀' },
-  { id: 'spicy', label: 'Spicy', emoji: '🔥' },
-  { id: 'fast', label: 'Fasting', emoji: '🙏' },
-  { id: 'healthy', label: 'Healthy', emoji: '🌿' },
+  { id: 'all', label: 'All Flavours', gujLabel: 'બધા ફ્લેવર્સ', emoji: '✨' },
+  { id: 'masala', label: 'Masala', gujLabel: 'મસાલા', emoji: '🌶️' },
+  { id: 'classic', label: 'Classic', gujLabel: 'પરંપરાગત', emoji: '🌾' },
+  { id: 'tangy', label: 'Tangy', gujLabel: 'ચટપટા', emoji: '🍋' },
+  { id: 'child', label: 'Kids Special', gujLabel: 'બાળકો માટે', emoji: '🧀' },
+  { id: 'spicy', label: 'Spicy', gujLabel: 'તીખા', emoji: '🔥' },
+  { id: 'fast', label: 'Fasting', gujLabel: 'ફરાળી', emoji: '🙏' },
+  { id: 'healthy', label: 'Healthy', gujLabel: 'હેલ્ધી', emoji: '🌿' },
 ]
 
 export const spiceConfig = {
@@ -59,6 +60,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#D4870A',
     emoji: '🌾',
     weight: '200g',
+    nameGuj: 'જીરા મસાલા',
   },
   {
     id: 'lasun-masala',
@@ -73,6 +75,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#C45A1A',
     emoji: '🧄',
     weight: '200g',
+    nameGuj: 'લસણ મસાલા',
   },
   {
     id: 'jawari-masala',
@@ -87,6 +90,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#A57C1B',
     emoji: '🌾',
     weight: '200g',
+    nameGuj: 'જ્વારી મસાલા',
   },
   {
     id: 'bajari-masala',
@@ -101,6 +105,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#8A6B2D',
     emoji: '🌾',
     weight: '200g',
+    nameGuj: 'બાજરી મસાલા',
   },
   {
     id: 'dahi-kothimbir',
@@ -115,6 +120,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#2E7D4F',
     emoji: '🥬',
     weight: '200g',
+    nameGuj: 'દહીં કોથમીર',
   },
 
   // CLASSIC
@@ -131,6 +137,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#C29A4B',
     emoji: '🌾',
     weight: '200g',
+    nameGuj: 'સાદા',
   },
   {
     id: 'jeera',
@@ -146,6 +153,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#D4870A',
     emoji: '🌾',
     weight: '200g',
+    nameGuj: 'જીરા',
   },
   {
     id: 'ajwain',
@@ -160,6 +168,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#8B6914',
     emoji: '🌼',
     weight: '200g',
+    nameGuj: 'અજમો',
   },
 
   // TANGY
@@ -176,6 +185,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#2E7D4F',
     emoji: '🍋',
     weight: '200g',
+    nameGuj: 'પાણી પુરી',
   },
   {
     id: 'periperi',
@@ -190,6 +200,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#B52A1A',
     emoji: '🔥',
     weight: '200g',
+    nameGuj: 'પેરી પેરી',
   },
   {
     id: 'chorafalli',
@@ -204,6 +215,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#D28A16',
     emoji: '🎉',
     weight: '200g',
+    nameGuj: 'ચોરાફળી',
   },
   {
     id: 'kothimbir-palak',
@@ -218,6 +230,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#2E8B57',
     emoji: '🥬',
     weight: '200g',
+    nameGuj: 'કોથમીર પાલક',
   },
   {
     id: 'tomato',
@@ -232,6 +245,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#D94A38',
     emoji: '🍅',
     weight: '200g',
+    nameGuj: 'ટામેટા',
   },
 
   // CHILD SPECIAL
@@ -248,6 +262,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#E6A800',
     emoji: '🍯',
     weight: '200g',
+    nameGuj: 'મીઠા',
   },
   {
     id: 'cheese',
@@ -262,6 +277,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#E0B200',
     emoji: '🧀',
     weight: '200g',
+    nameGuj: 'ચીઝ',
   },
 
   // SPICY
@@ -278,6 +294,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#C0392B',
     emoji: '🌶️',
     weight: '200g',
+    nameGuj: 'મન્ચુરિયન',
   },
   {
     id: 'schezwan',
@@ -292,6 +309,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#A92020',
     emoji: '🔥',
     weight: '200g',
+    nameGuj: 'સેચવાન',
   },
   {
     id: 'pavbhaji',
@@ -306,6 +324,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#A04A0A',
     emoji: '🥘',
     weight: '200g',
+    nameGuj: 'પાવ ભાજી',
   },
 
   // FASTING
@@ -322,6 +341,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#A67C52',
     emoji: '🙏',
     weight: '200g',
+    nameGuj: 'રાજગરા',
   },
 
   // HEALTHY
@@ -338,6 +358,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#4A7C59',
     emoji: '🌱',
     weight: '200g',
+    nameGuj: 'મગદાળ',
   },
   {
     id: 'methi',
@@ -352,6 +373,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#1B5E3B',
     emoji: '🌿',
     weight: '200g',
+    nameGuj: 'મેથી',
   },
   {
     id: 'palak',
@@ -366,6 +388,7 @@ export const menuItems: MenuItem[] = [
     accentColor: '#2E8B57',
     emoji: '🥬',
     weight: '200g',
+    nameGuj: 'પાલક',
   },
 ]
 
